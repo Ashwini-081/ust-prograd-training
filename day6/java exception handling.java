@@ -8,13 +8,12 @@ public class Solution {
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        //Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         try{
         
-            //int x = new Integer(sc.nextInt());
-            //int y = new Integer(sc.nextInt());
-            int x=10;
-            int y=20;
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            
             System.out.println(""+(x/y));
         }catch (InputMismatchException e){
             System.out.println("java.util.InputMismatchException");
