@@ -3,7 +3,7 @@ import java.util.Vector;
 import java.util.Vector;
 public class vectorfruits {
     public static void main(String[] args) {
-        Vector<String> vector=new Vector<>();
+        Vector<String> vector=new Vector<String>();
         vector.add("apple");
         vector.add("banana");
         vector.add("Kiwi");

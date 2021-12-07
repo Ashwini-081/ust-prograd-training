@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class arraylistphonenumber {
     public static void main(String[] args) {
-        ArrayList<String> al=new ArrayList();
+        ArrayList<String> al=new ArrayList<String>();
         al.add("num1");
         al.add("num2");
         al.add("num3");
@@ -10,12 +10,5 @@ public class arraylistphonenumber {
         System.out.println(al);
         al.remove(1);
         System.out.println(al);
-
-
     }
-
-
-
-
-
 }

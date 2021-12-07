@@ -1,10 +1,8 @@
 import java.util.LinkedHashSet;
-public class LinkedHashSet
+public class Patientlist
 {
     public static void main(String[] args)
     {
-        
- 
         LinkedHashSet<String> set = new LinkedHashSet<String>();
  
         

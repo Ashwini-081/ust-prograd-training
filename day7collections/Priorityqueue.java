@@ -2,7 +2,7 @@ import java.util.PriorityQueue;
 
 public class Priorityqueue {
     public static void main(String[] args) {
-        PriorityQueue<String> pq=new PriorityQueue();
+        PriorityQueue<String> pq=new PriorityQueue<String>();
         pq.add("Fever");
         pq.add("Cough");
         pq.add("heartattack");

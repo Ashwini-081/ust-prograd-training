@@ -1,7 +1,7 @@
 import java.util.HashSet;
 public class Hashsetsrn {
     public static void main(String[] args) {
-        HashSet<Integer> hs=new HashSet();
+        HashSet<Integer> hs=new HashSet<Integer>();
         hs.add(1);
         hs.add(2);
         hs.add(3);

@@ -1,7 +1,7 @@
 import java.util.TreeSet;
 public class Studentrollnum {
     public static void main(String[] args) {
-        TreeSet<Integer> ts=new TreeSet();
+        TreeSet<Integer> ts=new TreeSet<Integer>();
         ts.add(1);
         ts.add(2);
         ts.add(3);
