@@ -18,6 +18,9 @@ public class Library {
     FileReader reader=new FileReader("Library management.txt");
     System.out.println(reader.read());
     reader.close();
+
+    String search = "Library/Library management.txt";
+    String replace = "repla/Library management.txt";
   }
 }
     

@@ -8,6 +8,4 @@ public class Cube{
 Side=num;
 }
 private int Side=0;
-
-
 }

@@ -1,17 +1,23 @@
 import org.w3c.dom.ls.LSOutput;
 
 public class Rectangle {
-    public int area(int width,int length){
-        return width*length;
+    int length;
+    int width;
+    public Rectangle(int width , int length) {
+        if (length<=0 || width<=0 ){
+            throw new IllegalArgumentException("canot use Zero and negative numver");
+        }
+        this.length=length;
+        this.width=width;
 
     }
-    public int perimeter(int width,int length){
-        int p=2*(width+length);
-        return p;
+
+    public int area(){
+        return this.width*this.length;
 
     }
+    public int perimeter(){
 
-
-
-
+        return 2*(this.width+this.length);
+    }
 }
