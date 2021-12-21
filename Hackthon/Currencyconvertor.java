@@ -18,7 +18,7 @@ import java.util.logging.*;
 
 public class Currencyconvertor {
     private static final DecimalFormat df = new DecimalFormat("0.00");
-    static double amount=1;
+    static double amount = 1;
     private final static Logger LOGGER =
             Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     public void makeSomeLog()
@@ -26,7 +26,7 @@ public class Currencyconvertor {
         LOGGER.log(Level.INFO, "Program started.");
     }
 
-    public static void main(String args[])  {
+    public static void main(String args[]) {
         Currencyconvertor obj = new Currencyconvertor();
         obj.makeSomeLog();
 
@@ -35,9 +35,9 @@ public class Currencyconvertor {
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
         log.log(Level.INFO, "Program stopped.");
-    }
-    Scanner in = new Scanner(System.in);
-    while(true){
+
+        Scanner in = new Scanner(System.in);
+        while (true) {
             System.out.println("Type 1 for INR : ");
             System.out.println("Type 2 for Dollar to Rupee conversion: ");
             System.out.println("Type 3 for euro to Rupee conversion: ");
@@ -53,7 +53,7 @@ public class Currencyconvertor {
                 case 1:
                     System.out.print("Enter rupee amount: ");
                     double r1 = in.nextDouble();
-                    System.out.println("User entered amount"+ df.format(r1));
+                    System.out.println("User entered amount" + df.format(r1));
 
                     break;
 
@@ -62,25 +62,25 @@ public class Currencyconvertor {
                     double d = in.nextDouble();
                     double r2 = d * 65.85;
                     System.out.println(d + " dollars => " + r2 + " rupees");
-                    System.out.println("User entered amount"+ df.format(r2));
+                    System.out.println("User entered amount" + df.format(r2));
                 case 3:
                     System.out.print("Enter euro amount: ");
                     double e = in.nextDouble();
                     double r3 = e * 85.76;
                     System.out.println(e + " euro=> " + r3 + " rupees");
-                    System.out.println("User entered amount"+ df.format(r3));
+                    System.out.println("User entered amount" + df.format(r3));
                 case 4:
                     System.out.print("Enter British pound amount: ");
                     double bp = in.nextDouble();
                     double r4 = bp * 100.74;
                     System.out.println(bp + "British pound => " + r4 + " rupees");
-                    System.out.println("User entered amount"+ df.format(r4));
+                    System.out.println("User entered amount" + df.format(r4));
                 case 5:
                     System.out.print("Enter swiss france amount: ");
-                    double sf= in.nextDouble();
+                    double sf = in.nextDouble();
                     double r5 = sf * 82.36;
                     System.out.println(sf + " swiss france => " + r5 + " rupees");
-                    System.out.println("User entered amount"+ df.format(r5));
+                    System.out.println("User entered amount" + df.format(r5));
 
 
                     break;
@@ -89,10 +89,14 @@ public class Currencyconvertor {
                     System.exit(0);
 
                 default:
-                  System.out.println("Incorrect Choice");
+                    System.out.println("Incorrect Choice");
             }
         }
+
     }
+}
+
+
 
 //    Make a console based currency converter application with suppport for atleast 5 currencies.
 //        Requirements:
