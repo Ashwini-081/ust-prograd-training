@@ -1,0 +1,4 @@
+@RestController
+class MVCController{
+
+}
