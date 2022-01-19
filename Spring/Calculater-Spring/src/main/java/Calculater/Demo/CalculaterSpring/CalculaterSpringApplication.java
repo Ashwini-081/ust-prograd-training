@@ -14,8 +14,7 @@ public class CalculaterSpringApplication {
 
 	public static void main(String[] args) {
 
-		ApplicationContext context=SpringApplication.run(CalculaterSpringApplication.class, args);
-		CalculatorController calculatorController=context.getBean(CalculatorController.class);
+		SpringApplication.run(CalculaterSpringApplication.class, args);
 
 
 
