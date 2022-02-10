@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org" >
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
@@ -32,15 +32,16 @@
 <div class="navigation">
   <a href="/">Home</a>
   <a class="active" href="/login" style="float:right">Login</a>
-  <a href="/register" style="float:right">Register</a>
+  <a href="/registration" style="float:right">Register</a>
+  <a href="/contact">Contact</a>
 </div>
 <center>
   <h1>Login Page</h1>
 </center>
-<h6 style="font-size:20px;color:red;text-align:center"><small><span th:text="${message}"></span></small></h6>
-<form  action="/movies" method="post">
+
+<form action="/login" method="post">
   <center>
-    <div class="container" style="border:5px solid green;padding:50px;width:350px;background-color:lightgrey">
+    <div class="container" style="border:5px solid green;padding:50px;width:300px;background-color:lightgrey">
       <label style="font-size:125%">Username:</label>&nbsp;
       <input type="text" placeholder="Enter Username" name="userName" required><br/><br/>
       <label style="font-size:125%">Password:</label>&nbsp;

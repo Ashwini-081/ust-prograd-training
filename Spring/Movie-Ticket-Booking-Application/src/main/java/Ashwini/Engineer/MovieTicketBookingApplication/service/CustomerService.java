@@ -18,7 +18,6 @@ public class CustomerService {
     public Boolean existsById(String userName){
         return customerRepository.existsById(userName);
     }
-
     public Customer findCustomerByUserName(String userName){
         return customerRepository.getById(userName);
     }
